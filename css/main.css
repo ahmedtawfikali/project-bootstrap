@@ -1,0 +1,171 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color:rgb(235, 19, 19);
+    --yellow-color:rgb(153, 153, 104);
+}
+
+/* body{
+    height: 2000px;
+} */
+.navbar-brand {
+    color: var(--green-color);
+    position: relative;
+}
+
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 10px;
+height: 10px;
+background-color: var(--green-color);
+border-radius: 50%;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--green-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--green-color);
+
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+
+}
+
+
+.main-btn {
+    color: white;
+    background-color: var(--green-color);
+}
+
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 56px);
+}
+
+.icon-holder{
+    height: 200px;
+}
+.icon-holder svg{
+left: 50%;
+transform: translateX(-50%);
+}
+.number{
+    font-size: 12rem;
+    color: #eff7fa;
+    
+}
+.icon{
+    color: var(--green-color);
+
+}
+
+.our-work{
+    background-color: rgba(136, 181, 209, 0.491);
+}
+.our-work ul li {
+    padding: 0.5rem;
+
+}
+.our-work ul li.active {
+background-color: var(--red-color)  ;
+}
+
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+
+}
+
+
+.our-work .box{
+padding: 5px;
+overflow: hidden;
+position: relative;
+
+}
+
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color:  #17335da4;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+
+}
+
+.our-work .box:hover:before{
+    transform: translateX(0);
+
+}
+
+.descraiption{
+    max-width: 500px;
+    
+}
+
+
+.team{
+    background-color: var();
+}
+.team h2{
+    color: var(--yellow-color);
+
+ 
+    
+}
+
+.team .box h4{
+    background-color: var(--green-color);
+}
+
+
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom:1px solid white ;
+}
+
+
+.footer{
+    background-color: var(--dark-color);
+}
+.contact .btn{
+    background-color: var(--red-color);
+    color: white;
+}
